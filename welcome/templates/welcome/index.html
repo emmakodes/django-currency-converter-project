@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Welcome Page</title>
+</head>
+<body style="background-color:powderblue; margin-left:400px">
+<img src="{% static 'images/flower.png' %}" width="200" height="200">
+<div>
+<h1 style="background-color:powderblue; margin-left:-50px">Hello!!! Welcome to my Page!!</h1>
+<h2>I am a ...........!!</h2>
+<h2>Check out my recent projects!</h2>
+<p><a href="{% url 'currencyconverter:converter' %}">Click Here</a></p>
+    </div>
+</body>
+</html>

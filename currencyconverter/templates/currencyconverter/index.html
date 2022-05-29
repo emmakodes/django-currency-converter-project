@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Currency Converter</title>
+</head>
+<body style="background-color:powderblue;">
+<h1 style="margin-left:350px;">My Currency Converter</h1>
+
+<form style="margin-left:400px" method="post">
+    {% csrf_token %}
+    {{currencyform.as_p}}
+<!--  <label style="color:white;" for="fname">Enter your Dollar Value:</label><br><br>-->
+<!--  <input type="number" id="fname" name="dollar"><br><br>-->
+  <input type="submit" value="Submit"><br>
+</form>
+<h2 style="margin-left:350px;">The Naira equivalent is:  {{result}} Naira</h2>
+</body>
+</html>
+
+
+
